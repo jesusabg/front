@@ -1,0 +1,12 @@
+<section class="section-proveedor row">
+  <h1 class="text-center">Portal comprador</h1>
+  <div class="container-form-proveedor card col col-lg-5 col-md-6">
+      <form action="" [formGroup]="MyForm">
+        <input type="text" placeholder="Nombre del proveedor"  formControlName="providerName">
+        <span  *ngIf="MyForm.get('providerName')!.invalid" style="color:#DC3545; display: inline-block; width: 100%; margin-top: -15px;">*Campo requerido</span>
+        <input type="number" placeholder="Número de piezas solicitadas" formControlName="numberOfPieces">
+        <span  *ngIf="MyForm.get('numberOfPieces')!.invalid" style="color:#DC3545; display: inline-block; width: 100%; margin-top: -15px;">*Campo requerido</span>
+        <button class="btn btn-success" [disabled]="MyForm.invalid" (click)="postTaskBuyer()">Enviar</button>
+      </form>
+  </div>
+</section>

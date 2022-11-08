@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.section-proveedor{
+    width: 45%;
+    min-width: 350px;
+    height: auto;
+    margin: 250px auto;
+}
+form{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+input{
+    width: 100%;
+    height: 50px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    border: 1px solid rgba(200, 200, 200, 0.695);
+}
+.container-form-proveedor{
+    width: 100%;
+    padding: 25px;
+}
+button{
+    width: 35%;
+    min-width: 100px;
+    height: 50px;
+}

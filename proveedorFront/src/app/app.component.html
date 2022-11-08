@@ -1,0 +1,10 @@
+<section class="section-proveedor row">
+  <h1 class="text-center">Portal proveedor</h1>
+  <div class="container-form-proveedor card col col-lg-5 col-md-6">
+      <form action="" [formGroup]="MyFormP" >
+        <input type="number" placeholder="piezas faltantes" formControlName="NumberOfMissingPieces">
+        <span  *ngIf="MyFormP.get('NumberOfMissingPieces')!.invalid" style="color:#DC3545; display: inline-block; width: 100%; margin-top: -15px;">*Campo requerido</span>
+        <button class="btn btn-success" [disabled]="MyFormP.invalid">Enviar</button>
+      </form>
+  </div>
+</section>
